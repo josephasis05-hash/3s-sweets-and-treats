@@ -13,7 +13,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   };
 
   emailjs.send("service_shl6spl", "template_k4fwj6c", params)
-  .then(function(response){s
+  .then(function(response){
     console.log("SUCCESS", response);
 
     alert("Message Sent Successfully!");
