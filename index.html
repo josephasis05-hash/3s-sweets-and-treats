@@ -8,9 +8,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="sweets.css">
+
+
   <title>3S Sweets and Treats</title>
 </head>
 <body>
+  <script type="text/javascript"></script>
   <header class="header">
     <div class="logo">
     <img src="logoo.png" class="log" alt="Logo">
@@ -80,7 +83,7 @@
 
   <div class="product-card">
     <img src="products/bananacream.jpg">
-    <p class="product-name"><span>Banana</span> Cream</p>
+    <p class="product-name"><span>Banana</span> Cream</p> 
   </div>
 
   <div class="product-card">
@@ -130,19 +133,19 @@
   <div class="contactt">
     <h2 class="contact">CONTACT US</h2>
   </div>
-  <form>
+  <form id="contactForm">
     <div class="input-box">
-      <input type="text" placeholder="Full Name">
-      <input type="email" placeholder="Your Email or Facebook">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Your Email or Facebook" required>
     </div>
 
     <div class="input-box">
-      <input type="text" placeholder="Contact Number">
+      <input type="text" id="phone" placeholder="Contact Number" required>
     </div>
 
-    <textarea placeholder="Your Message"></textarea>
+    <textarea id="message" placeholder="Your Message" required></textarea>
 
-    <button class="btn">Send Message</button>
+    <button type="submit" class="btn">Send Message</button>
   </form>
   <div class="contact-info">
     <p>
@@ -186,5 +189,12 @@
 
 </footer>
 
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script src="sweet.js"></script>
+
 </body>
+
 </html>
